@@ -1,0 +1,3 @@
+fct-temp.php -> AU choix
+
+cnx.php -> connexion à la base
