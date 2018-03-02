@@ -4,10 +4,11 @@
             <?php include 'includes/header.html' ?>
             <title>MemeouMemepas</title>
 
+            
         </head>
         <body>
           <div class="jumbotron">
-              
+
 
 
 
@@ -42,6 +43,8 @@
             <button type="button" class="btn btn-primary btn-lg btn-block">Validate MEME &#10004;</button>
           </div>
 
+
           <?php include 'includes/base_js.html' ?>
+
         </body>
     </html>
