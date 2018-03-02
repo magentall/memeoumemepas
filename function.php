@@ -13,10 +13,4 @@ include('login.php');
 		}
 	}
 
-/*
-$textht = $_POST['textht'];
-echo $textht;
-$textbas = $_POST['textbas'];
-echo $textbas;
-*/
 ?>
