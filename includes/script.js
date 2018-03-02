@@ -1,10 +1,3 @@
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-
-<script type="text/javascript">
-
-
-
 $("#inputGroupSelect03").on('change', function()  { // On appel l'id de la classe select, et on attribue une action change pr changer la valeur de l'élement img
     console.log(this);
     var valeur = $('#inputGroupSelect03 :selected').text(); // on créer une variable à laquelle on attribut son id  ainsi que l'action choisir
@@ -17,16 +10,8 @@ $(document).ready(function() {
     var textht = $("#basic-url-ht").val();
     alert(textht);
     })
-});
-
-$(document).ready(function() {
     $("#basic-url-bas").keyup(function() {
     var textbas = $("#basic-url-bas").val();
     alert(textbas);
     })
 });
-
-
-
-
-</script>

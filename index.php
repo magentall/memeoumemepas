@@ -51,7 +51,9 @@
 
             <button type="button" class="btn btn-primary btn-lg btn-block">Validate MEME &#10004;</button>
           </div>
+        <script type="text/javascript" src="includes/script.js">
 
+        </script>
           <?php include 'includes/base_js.html' ?>
         </body>
     </html>
