@@ -13,7 +13,7 @@
 
 
             <div id="idimg" class="img-fluid">
-                <img id='img' src="img/futurama1">
+                <img  src="img/futurama1">
 
             </div>
             <div class="input-group mb-3">
@@ -52,7 +52,7 @@
 
             <button type="button" class="btn btn-primary btn-lg btn-block">Validate MEME &#10004;</button>
           </div>
-
+        <script type="text/javascript" src="includes/script.js"></script>
 
           <?php include 'includes/base_js.html' ?>
 
