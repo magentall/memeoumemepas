@@ -9,12 +9,13 @@
           <div class="jumbotron">
 
 
-
-
             <div id="idimg" class="img-fluid">
+                <p id="textht"></p>
                 <img src="img/futurama1">
-
+                <p id="textbas"></p>
             </div>
+
+
             <div class="input-group mb-3">
               <div class="input-group-prepend">
                 <button class="btn btn-outline-secondary" type="button">&#10004;</button>

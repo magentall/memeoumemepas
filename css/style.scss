@@ -1,0 +1,16 @@
+p {
+    height: 50px;
+    img {
+        position: absolute;
+        z-index: 0;
+    }
+}
+p#textht {
+        position: absolute;
+        z-index : 2;
+}
+
+p#textbas {
+        position: absolute;
+        z-index :auto;
+}

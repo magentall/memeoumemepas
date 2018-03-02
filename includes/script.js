@@ -6,12 +6,14 @@ $("#inputGroupSelect03").on('change', function()  { // On appel l'id de la class
 });
 
 $(document).ready(function() {
-    $("#basic-url-ht").keyup(function() {
-    var textht = $("#basic-url-ht").val();
-    alert(textht);
+    $("#basic-url-ht").keyup(function() { //on récupére le texte du bas et lui assigne l'action keyup
+    var textht = $("#basic-url-ht").val();// on créee une var ds laquelle on insére le texte du bas
+    $("#textht").text(textht);// on récupére l'élement paragraphe du haut et on demande à l'input de se placer au-dessus de l'img soit ds le p.
+    //alert(textht);
     })
     $("#basic-url-bas").keyup(function() {
     var textbas = $("#basic-url-bas").val();
-    alert(textbas);
+    $("#textbas").html(textbas);
+    //alert(textbas);
     })
 });
