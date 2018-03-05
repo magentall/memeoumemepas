@@ -1,6 +1,6 @@
 <?php
 include 'includes/fct-temp.php';
-
+var_dump($_POST);
 //Affichage de l'image finale
 if (isset($_POST['submit'])){
   $img = $_POST['#inputGroupSelect03'];

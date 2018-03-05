@@ -7,7 +7,7 @@ function create_url($cnx){
   return $url_meme;
 }
 // vérif si url dans la base return une url valide
-function crea_check_url($cnx){
+function crea_check_url_old($cnx){
   $query="SELECT URL_mm FROM IMG_rdr";
   $resURL_MEME=mysqli_query($cnx,$query);
   $url_meme=create_url();
@@ -32,7 +32,7 @@ function crea_check_url($cnx){
   }
 }
 // vérif si url dans la base return une url valide plus rapide
-function crea_check_url_v2($cnx){
+function crea_check_url_v2_old($cnx){
   $query="SELECT URL_mm FROM IMG_rdr";
   $resURL_MEME=mysqli_query($cnx,$query);
   $url_meme=create_url();
