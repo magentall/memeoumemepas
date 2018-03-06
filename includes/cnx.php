@@ -1,4 +1,5 @@
 <?php
+function conex(){
 $serveur = "localhost";
 $usr= "csa";
 $password = "aform87";
@@ -10,4 +11,7 @@ $cnx = mysqli_connect($serveur, $usr, $password, $dbName);
 
 $cnxo =  new mysqli($serveur, $usr, $password, $dbName);
 mysqli_set_charset($cnx, "utf8");
+
+return $cnx;
+}
 ?>
