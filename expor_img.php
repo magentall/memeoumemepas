@@ -5,7 +5,6 @@ include 'includes/fct-temp.php';
 //Affichage de l'image finale
 if (isset($_POST['submit'])){
   $img = './img/futurama1';
-
   $txt_up = $_POST['textht'];
   $txt_down = $_POST['textbas'];
   var_dump($_POST);
