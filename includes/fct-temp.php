@@ -1,10 +1,10 @@
 <?php
 // creation d'une url html return url.html
-function create_url($cnx){
+function create_url($cnx,$nomfic){
   $rand=rand(0,700000000);
   $date_crea = date("Y-m-d");
-  $url_meme="img/".$date_crea.$nomfic.$rand.".".$type;
-  return $url_meme;
+  $url_img="img/".$date_crea.$nomfic.$rand.".".$type;
+  return $url_img;
 }
 // vérif si url dans la base return une url valide
 function crea_check_url_old($cnx){
@@ -25,7 +25,7 @@ function crea_check_url_old($cnx){
     return $url_meme;
   }
   if ($sam==1) {
-    return crea_check_url($cnx);
+    return crea_check_url_old($cnx);
   }
   else {
     return $url_meme;
@@ -40,7 +40,7 @@ function crea_check_url_v2_old($cnx){
     while ($row =mysqli_fetch_assoc($resModAuteur)){
       for ($i = 0; $i<sizeof($row['URL_mm']); $i++){
         if (strcmp($url_meme,$row['URL_mm'])==0) {
-          return crea_check_url_v2($cnx);
+          return crea_check_url_v2_old($cnx);
         }
       }
     }
