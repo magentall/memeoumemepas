@@ -11,7 +11,7 @@ function crea_img($img, $txt, $x, $y){
      // Définie le texte inseré
 
      // Print Text On Image
-     return = imagettftext($jpg_image, 20, 0, $x, $y, $white, $font_path, $txt_up);
+     return imagettftext($jpg_image, 20, 0, $x, $y, $white, $font_path, $txt_up);
      // Send Image to Browser
      //imagejpeg($jpg_image);
   /*   // Creation d'une url html return url.html

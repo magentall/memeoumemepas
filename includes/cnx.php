@@ -1,8 +1,8 @@
 <?php
 function conex(){
 $serveur = "localhost";
-$usr= "csa";
-$password = "aform87";
+$usr= "user20";
+$password = "whale";
 $dbName= "mmp";
 
 // attention add user et grant user on the table

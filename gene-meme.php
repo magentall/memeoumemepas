@@ -20,7 +20,7 @@ if (isset($_POST['submit'])){
   imagejpeg($img_rdr,$url_img);
   $url_meme=crea_check_url_v2_old($cnx);
   ins_2_meme($cnx,$url_img,$url_meme);
-  $inside_html="<img src=\"".$url_img."\" />;
+  $inside_html="<img src=\"".$url_img."\" />";
   $f=fopen($url_meme,"x+");
   fputs($f,$inside_html);
   fclose($f);
