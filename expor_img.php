@@ -1,12 +1,63 @@
 <?php
 include 'includes/fct-temp.php';
-var_dump($_POST);
+//var_dump($_POST);
+
 //Affichage de l'image finale
 if (isset($_POST['submit'])){
-  $img = $_POST['#inputGroupSelect03'];
-  $txt_up = $_POST['#basic-url-ht'];
-  $txt_down = $_POST['#basic-url-bas'];
+  $img = './img/futurama1';
 
+  $txt_up = $_POST['textht'];
+  $txt_down = $_POST['textbas'];
+  var_dump($_POST);
+
+
+  //$fileDisk = saveImg($cnx, $img);
+
+  function imgMagick($txt_up, $txt_down, $img) {
+
+
+     /* Create imagickdraw object */
+     $draw = new ImagickDraw();
+
+     /* Start a new pattern called "gradient" */
+     $draw->pushPattern('gradient', 0, 0, 50, 50);
+
+     /* Close the pattern */
+     $draw->popPattern();
+
+     /* Set font size to 52 */
+     $draw->setFontSize(30);
+
+     /* Set font color */
+     $draw->setFillColor('white');
+
+     /* Annotate some text */
+     $draw->annotation(40, 50, $txt_up);
+
+     $draw->annotation(40, 470, $txt_down);
+
+     /* Create a new canvas object and a white image */
+     $canvas = new Imagick($img);
+
+     /* Draw the ImagickDraw on to the canvas */
+     $canvas->drawImage($draw);
+
+     /* 1px black border around the image */
+     $canvas->borderImage('black', 1, 1);
+
+     /* Set the format to PNG */
+     $canvas->setImageFormat('png');
+
+          //header("Content-Type:imgage/png");
+
+       return $canvas;
+  }
+    $meme = imgMagick($txt_up, $txt_down, $img);
+    imgMagick();
+    echo $canvas;
+    //file_put_contents ('./img/futurama1', $canvas);
+    //echo $img;
+  /*
   function crea_img($img, $txt){
        //Définie le type de contenu
        header('Content-type: image');
@@ -32,6 +83,6 @@ if (isset($_POST['submit'])){
        imagedestroy($jpg_image);
   }
   //crea_img($img, $txt);
-
+  */
 }
 ?>

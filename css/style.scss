@@ -2,15 +2,18 @@ p {
     height: 50px;
     img {
         position: absolute;
-        z-index: 0;
     }
 }
 p#textht {
-        position: absolute;
-        z-index : 2;
+    position: absolute;
+    left: 90px;
+    text-align: center;
+    font-family: arial black;
 }
 
 p#textbas {
-        position: absolute;
-        z-index :auto;
+    position: relative;
+    bottom: 20px;
+    left: 65px;
+    padding-bottom: 5px;
 }
